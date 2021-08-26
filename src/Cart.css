@@ -1,0 +1,21 @@
+* {
+  background-color: bisque;
+}
+
+.row {
+  margin-top: 180px;
+  margin-left: 300px;
+}
+
+table {
+    background-color: aqua;
+    width: 60%;
+  }
+
+tr, td {
+  width: 9%;
+}
+
+.center {
+  text-align: center;
+}
