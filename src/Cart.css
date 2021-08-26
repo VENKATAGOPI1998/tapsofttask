@@ -7,14 +7,11 @@
   margin-left: 300px;
 }
 
-table {
+table, th, tr , td {
     background-color: aqua;
     width: 60%;
+    border: 1px solid black;
   }
-
-tr, td {
-  width: 9%;
-}
 
 .center {
   text-align: center;
