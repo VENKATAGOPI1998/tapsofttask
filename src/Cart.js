@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { getOutput } from "./axios";
 import "./Cart.css";
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "../node_modules/bootstrap/dist/css/bootstrap.css";
 
 function Cart() {
   let [item, setItem] = useState([]);
@@ -19,10 +21,10 @@ function Cart() {
         <div class="table">
           <table className="center">
             <tr>
-              <th>Bike Name</th>
-              <th>Company Name</th>
-              <th>City Name</th>
-              <th>Country Name</th>
+              <th class="col-md-3">Bike Name</th>
+              <th class="col-md-3">Company Name</th>
+              <th class="col-md-3">City Name</th>
+              <th class="col-md-3">Country Name</th>
             </tr>
           </table>
           {item.slice(0, 5).map((user, index) => {
@@ -30,10 +32,10 @@ function Cart() {
               <div className="center">
               <table>
                 <tr>
-                  <td>{user.name}</td>
-                  <td>{user.company}</td>
-                  <td>{user.location.city}</td>
-                  <td>{user.location.country}</td>
+                  <td class="col-md-3">{user.name}</td>
+                  <td class="col-md-3">{user.company}</td>
+                  <td class="col-md-3">{user.location.city}</td>
+                  <td class="col-md-3">{user.location.country}</td>
                 </tr>
               </table>
               </div>
